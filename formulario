@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form>
+        <h2>Dados pessoais</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco"><br>
+        <label for="cidade">Cidade:</label>   
+
+        <input type="text" id="cidade" name="cidade"><br>
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="sp">São   
+ Paulo</option>
+            </select><br>
+
+        <h2>Dados profissionais</h2>
+        <label>Natureza do Cargo:</label><br>
+        <input type="radio" id="gerencia" name="cargo" value="gerencia">
+        <label for="gerencia">Gerencia</label>
+        <input type="radio" id="financeiro" name="cargo" value="financeiro">
+        <label for="financeiro">Financeiro</label>
+        <input type="radio" id="recepcao" name="cargo" value="recepcao">
+        <label for="recepcao">Recepção</label>
+        <input type="radio" id="administrativo" name="cargo" value="administrativo">
+        <label for="administrativo">Administrativo</label>   
+
+        <input type="radio" id="juridico" name="cargo" value="juridico">
+        <label for="juridico">Jurídico</label><br>   
+
+
+        <label>Área de Interesse:</label><br>
+        <input type="checkbox" id="computacao" name="area[]" value="computacao">
+        <label for="computacao">Computação</label>
+        <input type="checkbox" id="biologia" name="area[]" value="biologia">
+        <label for="biologia">Biologia</label>   
+
+        <label for="mini-curriculo">Mini-currículo:</label><br>
+        <textarea id="mini-curriculo" name="mini-curriculo" rows="4" cols="50"></textarea><br>   
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
